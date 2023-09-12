@@ -24,3 +24,17 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+@media(max-width: 768px) {
+    .thanks {
+        border-radius: 10px;
+        width: 95%;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .thanks h2 {
+        font-size: 20px;
+        margin-top: 40%;
+        font-weight: 500;
+    }
+}
