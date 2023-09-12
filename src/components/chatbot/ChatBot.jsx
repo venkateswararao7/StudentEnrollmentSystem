@@ -32,7 +32,13 @@ const ChatBot = () => {
 
     const handleSend = () => {
         if (userInput.trim() === "") return;
+        const trimmedInput = userInput.trim();
 
+        if (currentStep === 0 && trimmedInput.toLowerCase() !== "got it") {
+            // If it's the first step and the message is not "Got it," do nothing.
+            setUserInput("");
+            return;
+        }
         const newMessages = [...messages, { text: userInput, isBot: false }];
         setMessages(newMessages);
         setUserInput("");
@@ -48,7 +54,15 @@ const ChatBot = () => {
     };
 
     const handleKeyPress = (e) => {
+        console.log(messages)
         if (e.key === "Enter") {
+            const trimmedInput = userInput.trim();
+
+            if (currentStep === 0 && trimmedInput.toLowerCase() !== "got it") {
+                // If it's the first step and the message is not "Got it," do nothing.
+                setUserInput("");
+                return;
+            }
             const newMessages = [...messages, { text: userInput, isBot: false }];
             setMessages(newMessages);
             if (messages.length === 5) {
