@@ -1,0 +1,57 @@
+.Eroll-page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #87CEEB;
+}
+
+.Eroll-page h1 {
+    position: relative;
+    text-align: center;
+    margin-top: 17%;
+}
+
+
+.Enrollbtn button {
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: #0c002b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.Enrollbtn button:hover {
+    background-color: #caf1de;
+    color: #0c002b;
+    border: 1px solid #0c002b;
+}
+
+/* 
+.Enrollbtn button {
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 6px;
+    background: #7d2ae8;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.Enrollbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Enrollbtn button:active {
+    transform: scale(0.96);
+
+} */
